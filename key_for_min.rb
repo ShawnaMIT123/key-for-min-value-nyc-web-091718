@@ -4,6 +4,9 @@
 def key_for_min_value(name_hash)
   valuemin = name_hash[0]
   keyofvalue = ""
+  if name_hash == {}
+    return nil
+  else
   name_hash.each { |key, value|
     if valuemin > value
       valuemin = value
@@ -11,4 +14,5 @@ def key_for_min_value(name_hash)
     end
   }
 keyofvalue
+end
 end
